@@ -19,7 +19,7 @@
     left: 0;
     bottom: 0;
     z-index: 2;
-    animation: highway 10s linear infinite;
+    animation: highway 6s linear infinite;
 }
 
 .car{
@@ -32,8 +32,36 @@
     left: 300px;
     z-index: 3;
     position: absolute;
-    animation: car 0.5s linear infinite;
+    animation: car 0.5s linear infinite alternate;
+    /* border: solid; */
 
+}
+.wheel{
+    position: absolute;
+    background:url(../images/98.png);
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 15px;
+    left: 50px;
+    z-index: 5;
+    animation: wheel linear 6s infinite ;
+  
+    
+}
+.wh2{
+    position: absolute;
+    background:url(../images/98.png);
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+    margin-left: 315px;
+    bottom: 15px;
+    animation: wheel linear 6s infinite ;
+    
 }
 
 .city{
@@ -44,8 +72,27 @@
     position: absolute;
     bottom: 300px;
     left: 0;
-    animation: city 10s linear infinite;
+    animation: city 15s linear infinite;
+    z-index: 1;
 }
 
 /* keyframes animations */
 
+@keyframes car{
+    100% {transform:translateY(-5px);}
+    
+}
+
+@keyframes highway{
+
+    100% {transform: translateX(-2000px);}
+}
+
+@keyframes city {
+
+    100% {transform: translateX(-2000px);}
+}
+
+@keyframes wheel{
+    100%{transform: rotate(1500deg);}
+}
