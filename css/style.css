@@ -1,0 +1,10 @@
+/* background image */
+.bg-img{
+    padding: 500px;
+    margin:0;
+    background:url(../images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    
+}
